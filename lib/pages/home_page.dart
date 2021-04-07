@@ -24,7 +24,6 @@ class _HomePageState extends State<HomePage> {
   getData() async {
     var res = await http.get(url);
     data = jsonDecode(res.body);
-    print(data);
     setState(() {});
   }
 
